@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="30c3e1fb-b5b4-4b7e-a6d8-4d1552d6c746" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/query_app" afterPath="$PROJECT_DIR$/query_app" />
     </list>
     <ignored path="Libreria Personale.iws" />
@@ -33,7 +32,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
@@ -45,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="query_app" pinned="false" current-in-tab="false">
+      <file leaf-file-name="query_app" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/query_app">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            <state relative-caret-position="216">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,8 +70,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/query_app" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/query_app" />
       </list>
     </option>
   </component>
@@ -103,7 +102,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -116,17 +115,11 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
@@ -181,16 +174,16 @@
       <workItem from="1480487254671" duration="307000" />
       <workItem from="1480487796194" duration="1729000" />
       <workItem from="1480489805075" duration="569000" />
-      <workItem from="1480491253151" duration="994000" />
+      <workItem from="1480491253151" duration="1623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10627000" />
+    <option name="totallyTimeSpent" value="11256000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1215" height="776" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24938272" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -229,7 +222,8 @@
     <MESSAGE value="Creazione index&#10;creazione PDO con primo caricamento du DB" />
     <MESSAGE value="Creazione index" />
     <MESSAGE value="Query da utilizzare + Test Inner Join" />
-    <option name="LAST_COMMIT_MESSAGE" value="Query da utilizzare + Test Inner Join" />
+    <MESSAGE value="Creazione Query eliminazione libro" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creazione Query eliminazione libro" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -292,14 +286,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/query_app">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -307,6 +293,14 @@
           <folding>
             <marker date="1480491823755" expanded="true" signature="356:452" ph="SELECT autor... libro" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query_app">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
