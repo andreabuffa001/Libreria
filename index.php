@@ -14,7 +14,7 @@ $autore_libro= 2;
 $titolo_libro= "Libro test 3";
 try {
     $dbh = new PDO('mysql:host=127.0.0.1;dbname=Libreria', $user, $pass);
-    foreach($dbh->query('INSERT INTO `libro`( `id_autore`, `titolo`, `prezzo`, `id_genere`, `anno`, `id_negozio`, `copertina`) VALUES ("'.$autore_libro.'","'.$titolo_libro.'",4.49,2,2016,2,"coperta.jpg")') as $row) {
+    foreach($dbh->query('SELECT autore.nome, autore.cognome, libro.titolo FROM libro, autore WHERE libro.titolo LIKE "%2"') as $row) {
         print_r($row);
     }
     $dbh = null;

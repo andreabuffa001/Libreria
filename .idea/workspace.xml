@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30c3e1fb-b5b4-4b7e-a6d8-4d1552d6c746" name="Default" comment="Creazione index" />
+    <list default="true" id="30c3e1fb-b5b4-4b7e-a6d8-4d1552d6c746" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/query_app" afterPath="$PROJECT_DIR$/query_app" />
+    </list>
     <ignored path="Libreria Personale.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -32,11 +36,10 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="18" selection-start-line="16" selection-start-column="24" selection-end-line="17" selection-end-column="18" />
+            <state relative-caret-position="378">
+              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
               <folding>
-                <marker date="1480174683983" expanded="true" signature="356:466" ph="INSERT INTO `libro`... " />
-                <marker date="1480174683983" expanded="true" signature="356:534" ph="INSERT INTO `libro`... " />
+                <marker date="1480491823755" expanded="true" signature="356:452" ph="SELECT autor... libro" />
               </folding>
             </state>
           </provider>
@@ -45,8 +48,8 @@
       <file leaf-file-name="query_app" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/query_app">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="82" selection-start-line="2" selection-start-column="82" selection-end-line="2" selection-end-column="82" />
+            <state relative-caret-position="162">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -61,15 +64,15 @@
       </list>
     </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
     <option name="FORCE_PUSH_ALLOWED" value="true" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/query_app" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -177,16 +180,17 @@
       <workItem from="1480285423662" duration="1094000" />
       <workItem from="1480487254671" duration="307000" />
       <workItem from="1480487796194" duration="1729000" />
-      <workItem from="1480489805075" duration="57000" />
+      <workItem from="1480489805075" duration="569000" />
+      <workItem from="1480491253151" duration="994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9121000" />
+    <option name="totallyTimeSpent" value="10627000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1215" height="776" extended-state="7" />
-    <editor active="false" />
+    <frame x="65" y="24" width="1215" height="776" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24938272" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -224,7 +228,8 @@
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="true" />
     <MESSAGE value="Creazione index&#10;creazione PDO con primo caricamento du DB" />
     <MESSAGE value="Creazione index" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creazione index" />
+    <MESSAGE value="Query da utilizzare + Test Inner Join" />
+    <option name="LAST_COMMIT_MESSAGE" value="Query da utilizzare + Test Inner Join" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -236,8 +241,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1480174683983" expanded="true" signature="356:466" ph="INSERT INTO `libro`... " />
-            <marker date="1480174683983" expanded="true" signature="356:534" ph="INSERT INTO `libro`... " />
+            <marker date="1480491823755" expanded="true" signature="356:452" ph="SELECT autor... libro" />
           </folding>
         </state>
       </provider>
@@ -255,8 +259,7 @@
         <state relative-caret-position="342">
           <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
-            <marker date="1480174683983" expanded="true" signature="356:466" ph="INSERT INTO `libro`... " />
-            <marker date="1480174683983" expanded="true" signature="356:534" ph="INSERT INTO `libro`... " />
+            <marker date="1480491823755" expanded="true" signature="356:452" ph="SELECT autor... libro" />
           </folding>
         </state>
       </provider>
@@ -274,8 +277,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1480174683983" expanded="true" signature="356:466" ph="INSERT INTO `libro`... " />
-            <marker date="1480174683983" expanded="true" signature="356:534" ph="INSERT INTO `libro`... " />
+            <marker date="1480491823755" expanded="true" signature="356:452" ph="SELECT autor... libro" />
           </folding>
         </state>
       </provider>
@@ -285,27 +287,25 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1480174683983" expanded="true" signature="356:466" ph="INSERT INTO `libro`... " />
-            <marker date="1480174683983" expanded="true" signature="356:534" ph="INSERT INTO `libro`... " />
+            <marker date="1480491823755" expanded="true" signature="356:452" ph="SELECT autor... libro" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/query_app">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="82" selection-start-line="2" selection-start-column="82" selection-end-line="2" selection-end-column="82" />
+        <state relative-caret-position="162">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="18" selection-start-line="16" selection-start-column="24" selection-end-line="17" selection-end-column="18" />
+        <state relative-caret-position="378">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
           <folding>
-            <marker date="1480174683983" expanded="true" signature="356:466" ph="INSERT INTO `libro`... " />
-            <marker date="1480174683983" expanded="true" signature="356:534" ph="INSERT INTO `libro`... " />
+            <marker date="1480491823755" expanded="true" signature="356:452" ph="SELECT autor... libro" />
           </folding>
         </state>
       </provider>
