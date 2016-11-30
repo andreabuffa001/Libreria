@@ -1,0 +1,4 @@
+#Query da utilizzare
+#Query INSERT
+#modificare l'inserimento delle varibili da passare in GET dal form di inserimento
+'INSERT INTO `libro`( `id_autore`, `titolo`, `prezzo`, `id_genere`, `anno`, `id_negozio`, `copertina`) VALUES ("'.$autore_libro.'","'.$titolo_libro.'",4.49,2,2016,2,"coperta.jpg")'
