@@ -10,3 +10,7 @@ VALUES ("'.$autore_libro.'","'.$titolo_libro.'",4.49,"'.$genere_libro'",2016,"'$
 'SELECT autore.nome, autore.cognome, libro.titolo FROM libro INNER JOIN libro.id_autore = autore.id_autore WHERE libro.titolo LIKE "%2"'
 
 #######Query Eliminazione Dato#######
+'DELETE FROM libro WHERE id_libro = $var_post'
+
+#######Query Select Ultimi libri#######
+'SELECT autore.nome, autore.cognome, libro.titolo FROM libro INNER JOIN libro.id_autore = autore.id_autore ORDER BY id_libro DESC LIMIT 4'

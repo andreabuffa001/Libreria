@@ -45,8 +45,8 @@
       <file leaf-file-name="query_app" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/query_app">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="255">
+              <caret line="15" column="138" selection-start-line="15" selection-start-column="138" selection-end-line="15" selection-end-column="138" />
               <folding />
             </state>
           </provider>
@@ -198,12 +198,20 @@
       <workItem from="1480489805075" duration="569000" />
       <workItem from="1480491253151" duration="1623000" />
       <workItem from="1480501737296" duration="1377000" />
-      <workItem from="1480517484656" duration="104000" />
+      <workItem from="1480517484656" duration="1506000" />
     </task>
+    <task id="LOCAL-00001" summary="Correzione Query Select">
+      <created>1480517622781</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1480517622781</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12737000" />
+    <option name="totallyTimeSpent" value="14139000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1432" y="-8" width="1296" height="1000" extended-state="6" />
@@ -247,7 +255,9 @@
     <MESSAGE value="Creazione index" />
     <MESSAGE value="Query da utilizzare + Test Inner Join" />
     <MESSAGE value="Creazione Query eliminazione libro" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creazione Query eliminazione libro" />
+    <MESSAGE value="Correzione Query Select" />
+    <MESSAGE value="Creazione Query Select ultimi libri inseriti" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creazione Query Select ultimi libri inseriti" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -344,8 +354,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/query_app">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="255">
+          <caret line="15" column="138" selection-start-line="15" selection-start-column="138" selection-end-line="15" selection-end-column="138" />
           <folding />
         </state>
       </provider>
