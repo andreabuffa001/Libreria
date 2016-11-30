@@ -7,6 +7,6 @@
 VALUES ("'.$autore_libro.'","'.$titolo_libro.'",4.49,"'.$genere_libro'",2016,"'$negozio'","copertina.jpg")'
 
 #######Query Select con valori da form di ricerca#######
-'SELECT autore.nome, autore.cognome, libro.titolo FROM libro, autore WHERE libro.titolo LIKE "%2"'
+'SELECT autore.nome, autore.cognome, libro.titolo FROM libro INNER JOIN libro.id_autore = autore.id_autore WHERE libro.titolo LIKE "%2"'
 
 #######Query Eliminazione Dato#######
