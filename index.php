@@ -6,7 +6,11 @@
 <body>
 <!--Blocco dedicato al menù-->
     <!--menu inline-->
-    
+    <ul>
+        <li>Libreria Completa</li>
+        <li>Ricerca</li>
+        <li><a href="new_book.php">Nuovo</a></li>
+    </ul>
 <!--Fine Blocco Menù-->
 <!-- Lista dei libri random-->
     <!--quattro blocchi con tutti i dati-->
