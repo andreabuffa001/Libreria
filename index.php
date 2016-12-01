@@ -6,22 +6,7 @@
 <body>
 <!--Blocco dedicato al menù-->
     <!--menu inline-->
-    <?php
-    $autore_libro= 1;
-    $titolo_libro="Prova libro 2";
-    $genere_libro= 1;
-    $negozio= 1;
-    $dbh = new PDO('mysql:host=127.0.0.1;dbname=libreria', 'root', '');
-        try {
-            foreach($dbh->query('INSERT INTO `libro`( `id_autore`, `titolo`, `prezzo`, `id_genere`, `anno`, `id_negozio`, `copertina`) VALUES ("'.$autore_libro.'","'.$titolo_libro.'",4.49,"'.$genere_libro.'",2016,"'.$negozio.'","copertina.jpg")') as $row) {
-                print_r($row);
-            }
-            $dbh = null;
-        } catch (PDOException $e) {
-            print "Error!: " . $e->getMessage() . "<br/>";
-            die();
-        }
-    ?>
+    
 <!--Fine Blocco Menù-->
 <!-- Lista dei libri random-->
     <!--quattro blocchi con tutti i dati-->
