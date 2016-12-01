@@ -39,7 +39,7 @@
     Else{
     ?>
         <!--Form Inserimento nuovo libro-->
-        <form method="post" action="<?php $PHP_SELF ?>" id="form">
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="form">
             <table>
                 <tr>
                     <td>Autore:</td>
@@ -84,7 +84,7 @@
                     <td><input type="text" name="note" id="note"></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" value="carica"></td>
+                    <td><input type="submit" value="carica" name="carica"></td>
                 </tr>
             </table>
         </form>
