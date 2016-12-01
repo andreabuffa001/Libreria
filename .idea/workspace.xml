@@ -47,16 +47,16 @@
       <file leaf-file-name="new_book.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new_book.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+            <state relative-caret-position="134">
+              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding>
-                <marker date="1480605856775" expanded="true" signature="765:884" ph="INSERT INTO `libro`... " />
-                <marker date="1480605856775" expanded="true" signature="765:923" ph="INSERT INTO `libro`... " />
-                <marker date="1480605856775" expanded="true" signature="765:981" ph="INSERT INTO `libro`... " />
-                <marker date="1480605856775" expanded="true" signature="765:993" ph="INSERT INTO `libro`... " />
-                <marker date="1480605856775" expanded="true" signature="765:1008" ph="INSERT INTO `libro`... " />
-                <marker date="1480605856775" expanded="true" signature="765:1030" ph="INSERT INTO `libro`... " />
-                <marker date="1480605856775" expanded="true" signature="765:1073" ph="INSERT INTO `libro`... " />
+                <marker date="1480605921165" expanded="true" signature="763:882" ph="INSERT INTO `libro`... " />
+                <marker date="1480605921165" expanded="true" signature="763:921" ph="INSERT INTO `libro`... " />
+                <marker date="1480605921165" expanded="true" signature="763:979" ph="INSERT INTO `libro`... " />
+                <marker date="1480605921165" expanded="true" signature="763:991" ph="INSERT INTO `libro`... " />
+                <marker date="1480605921165" expanded="true" signature="763:1006" ph="INSERT INTO `libro`... " />
+                <marker date="1480605921165" expanded="true" signature="763:1028" ph="INSERT INTO `libro`... " />
+                <marker date="1480605921165" expanded="true" signature="763:1071" ph="INSERT INTO `libro`... " />
               </folding>
             </state>
           </provider>
@@ -233,7 +233,7 @@
       <workItem from="1480517484656" duration="2665000" />
       <workItem from="1480523420059" duration="1164000" />
       <workItem from="1480589902944" duration="3475000" />
-      <workItem from="1480602328744" duration="3398000" />
+      <workItem from="1480602328744" duration="3501000" />
     </task>
     <task id="LOCAL-00001" summary="Correzione Query Select">
       <created>1480517622781</created>
@@ -291,11 +291,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480605620234</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Scheletro form inserimento nuovo libro + Effettuare test su caricamento libro">
+      <created>1480605865413</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1480605865413</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23335000" />
+    <option name="totallyTimeSpent" value="23438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -473,16 +480,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new_book.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+        <state relative-caret-position="134">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding>
-            <marker date="1480605856775" expanded="true" signature="765:884" ph="INSERT INTO `libro`... " />
-            <marker date="1480605856775" expanded="true" signature="765:923" ph="INSERT INTO `libro`... " />
-            <marker date="1480605856775" expanded="true" signature="765:981" ph="INSERT INTO `libro`... " />
-            <marker date="1480605856775" expanded="true" signature="765:993" ph="INSERT INTO `libro`... " />
-            <marker date="1480605856775" expanded="true" signature="765:1008" ph="INSERT INTO `libro`... " />
-            <marker date="1480605856775" expanded="true" signature="765:1030" ph="INSERT INTO `libro`... " />
-            <marker date="1480605856775" expanded="true" signature="765:1073" ph="INSERT INTO `libro`... " />
+            <marker date="1480605921165" expanded="true" signature="763:882" ph="INSERT INTO `libro`... " />
+            <marker date="1480605921165" expanded="true" signature="763:921" ph="INSERT INTO `libro`... " />
+            <marker date="1480605921165" expanded="true" signature="763:979" ph="INSERT INTO `libro`... " />
+            <marker date="1480605921165" expanded="true" signature="763:991" ph="INSERT INTO `libro`... " />
+            <marker date="1480605921165" expanded="true" signature="763:1006" ph="INSERT INTO `libro`... " />
+            <marker date="1480605921165" expanded="true" signature="763:1028" ph="INSERT INTO `libro`... " />
+            <marker date="1480605921165" expanded="true" signature="763:1071" ph="INSERT INTO `libro`... " />
           </folding>
         </state>
       </provider>

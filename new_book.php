@@ -15,7 +15,7 @@
     <!--attivazione del caricamento del nuovo libro-->
     <!--Blocco caricamento libro sul db-->
     <?php
-    if ((isset($_POST["carica"]))) {
+    if (isset($_POST['carica'])) {
         $autore_libro= $_POST['autore'];
         $titolo_libro=$_POST['titolo'];
         $genere_libro= $_POST['genere'];
