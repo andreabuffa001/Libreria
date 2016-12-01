@@ -72,7 +72,7 @@
                         </select></td>
                 </tr>
                 <tr>
-                    <td>Prezzo:</td>
+                    <td>Prezzo: </td>
                     <td><input type="text" name="prezzo"></td>
                 </tr>
                 <tr>
