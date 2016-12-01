@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30c3e1fb-b5b4-4b7e-a6d8-4d1552d6c746" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/new_book.php" />
+    <list default="true" id="30c3e1fb-b5b4-4b7e-a6d8-4d1552d6c746" name="Default" comment="Scheletro form inserimento nuovo libro + Effettuare test su caricamento">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new_book.php" afterPath="$PROJECT_DIR$/new_book.php" />
     </list>
     <ignored path="Libreria Personale.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +35,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="289">
+              <caret line="17" column="80" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="80" />
               <folding>
                 <marker date="1480602528016" expanded="true" signature="451:605" ph="SELECT autor... libro" />
               </folding>
@@ -48,15 +47,15 @@
       <file leaf-file-name="new_book.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new_book.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            <state relative-caret-position="678">
+              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding>
-                <marker date="1480603410680" expanded="true" signature="666:824" ph="INSERT INTO `libro`... " />
-                <marker date="1480603410680" expanded="true" signature="666:882" ph="INSERT INTO `libro`... " />
-                <marker date="1480603410680" expanded="true" signature="666:894" ph="INSERT INTO `libro`... " />
-                <marker date="1480603410680" expanded="true" signature="666:909" ph="INSERT INTO `libro`... " />
-                <marker date="1480603410680" expanded="true" signature="666:931" ph="INSERT INTO `libro`... " />
-                <marker date="1480603410680" expanded="true" signature="666:974" ph="INSERT INTO `libro`... " />
+                <marker date="1480605320827" expanded="true" signature="765:923" ph="INSERT INTO `libro`... " />
+                <marker date="1480605320827" expanded="true" signature="765:981" ph="INSERT INTO `libro`... " />
+                <marker date="1480605320827" expanded="true" signature="765:993" ph="INSERT INTO `libro`... " />
+                <marker date="1480605320827" expanded="true" signature="765:1008" ph="INSERT INTO `libro`... " />
+                <marker date="1480605320827" expanded="true" signature="765:1030" ph="INSERT INTO `libro`... " />
+                <marker date="1480605320827" expanded="true" signature="765:1073" ph="INSERT INTO `libro`... " />
               </folding>
             </state>
           </provider>
@@ -235,7 +234,7 @@
       <workItem from="1480517484656" duration="2665000" />
       <workItem from="1480523420059" duration="1164000" />
       <workItem from="1480589902944" duration="3475000" />
-      <workItem from="1480602328744" duration="1045000" />
+      <workItem from="1480602328744" duration="2914000" />
     </task>
     <task id="LOCAL-00001" summary="Correzione Query Select">
       <created>1480517622781</created>
@@ -272,11 +271,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480593644033</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Variabili in POST + query DB + File specifico per il caricamento del nuovo libro">
+      <created>1480603472715</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1480603472715</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20982000" />
+    <option name="totallyTimeSpent" value="22851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -284,6 +290,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24861111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -293,7 +300,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -325,7 +331,8 @@
     <MESSAGE value="Prima bozza stile index" />
     <MESSAGE value="Blocco per visualizzare 4 libri random" />
     <MESSAGE value="Correzione Query SELECT + Correzione Query INSERT&#10;(Error #1054 phpmyadmin)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correzione Query SELECT + Correzione Query INSERT&#10;(Error #1054 phpmyadmin)" />
+    <MESSAGE value="Variabili in POST + query DB + File specifico per il caricamento del nuovo libro" />
+    <option name="LAST_COMMIT_MESSAGE" value="Variabili in POST + query DB + File specifico per il caricamento del nuovo libro" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -444,8 +451,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="289">
+          <caret line="17" column="80" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="80" />
           <folding>
             <marker date="1480602528016" expanded="true" signature="451:605" ph="SELECT autor... libro" />
           </folding>
@@ -454,15 +461,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new_book.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        <state relative-caret-position="678">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
-            <marker date="1480603410680" expanded="true" signature="666:824" ph="INSERT INTO `libro`... " />
-            <marker date="1480603410680" expanded="true" signature="666:882" ph="INSERT INTO `libro`... " />
-            <marker date="1480603410680" expanded="true" signature="666:894" ph="INSERT INTO `libro`... " />
-            <marker date="1480603410680" expanded="true" signature="666:909" ph="INSERT INTO `libro`... " />
-            <marker date="1480603410680" expanded="true" signature="666:931" ph="INSERT INTO `libro`... " />
-            <marker date="1480603410680" expanded="true" signature="666:974" ph="INSERT INTO `libro`... " />
+            <marker date="1480605320827" expanded="true" signature="765:923" ph="INSERT INTO `libro`... " />
+            <marker date="1480605320827" expanded="true" signature="765:981" ph="INSERT INTO `libro`... " />
+            <marker date="1480605320827" expanded="true" signature="765:993" ph="INSERT INTO `libro`... " />
+            <marker date="1480605320827" expanded="true" signature="765:1008" ph="INSERT INTO `libro`... " />
+            <marker date="1480605320827" expanded="true" signature="765:1030" ph="INSERT INTO `libro`... " />
+            <marker date="1480605320827" expanded="true" signature="765:1073" ph="INSERT INTO `libro`... " />
           </folding>
         </state>
       </provider>
