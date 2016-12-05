@@ -4,6 +4,7 @@
 #elenco{
     border: 1px solid black;
     float: right;
+    width: 351px;
 }
 #sidebar{
     border: 1px solid black;
@@ -18,4 +19,7 @@
     border: 1px solid black;
     margin-bottom: 20px;
     float: left;
+}
+#note{
+     height: 100px;
 }
