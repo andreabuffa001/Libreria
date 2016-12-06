@@ -4,7 +4,7 @@
 #elenco{
     border: 1px solid black;
     float: right;
-    width: 351px;
+    width: 507px;
 }
 #sidebar{
     border: 1px solid black;
@@ -18,8 +18,14 @@
 .show-book{
     border: 1px solid black;
     margin-bottom: 20px;
+    margin-left: 10px;
     float: left;
+    width: 200px;
 }
 #note{
      height: 100px;
+}
+ul li {
+    display: inline-block;
+    border: 1px solid black;
 }

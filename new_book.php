@@ -23,11 +23,12 @@
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="all_book.php">Libreria Completa</a></li>
-            <li>Ricerca</li>
+            <li><a href="search.php">Ricerca</a></li>
             <li><a href="new_book.php">Nuovo</a></li>
         </ul>
     </div>
     <!--Fine Blocco Menù-->
+    <H2>Inserisci nuovo libro</H2>
     <!--Stile sidebar con copertina titolo e autore-->
     <div id="sidebar">
         <p>Ultimi libri inseriti</p>
@@ -45,19 +46,31 @@
         <!--attivazione del caricamento del nuovo libro-->
         <!--Blocco caricamento libro sul db-->
         <?php
-        if (isset($_GET['carica'])) {
-            $autore_libro= $_GET['autore'];
-            $titolo_libro=$_GET['titolo'];
-            $genere_libro= $_GET['genere'];
-            $negozio= $_GET['negozio'];
-            $prezzo_libro= $_GET['prezzo'];
-            $anno_libro= $_GET['anno'];
-            $note= $_GET['note'];
-            $copertina_libro= $_GET['copertina'];
+        if (isset($_POST['carica'])) {
+            //variabili in post dal form
+            $autore_libro= $_POST['autore'];
+            $titolo_libro=$_POST['titolo'];
+            $genere_libro= $_POST['genere'];
+            $negozio= $_POST['negozio'];
+            $prezzo_libro= $_POST['prezzo'];
+            $anno_libro= $_POST['anno'];
+            $note= $_POST['note'];
+            $copertina_libro= $_POST['copertina'];
+            //fine varibili
+            //caricamento FTP della copertina
+            $server= "127.0.0.1";
+            $username= 'daemon';
+            $password= 'xampp';
+            $login= ftp_login($id_connessione, $username, $passoword);
+            $id_connessione= ftp_connect($server);
+            $file_originale= $copertina_libro;
+            $file_destinazione= $copertina_libro;
+            ftp_chdir($id_connessione, 'uploads/');
+            ftp_put($id_connessione, $file_destinazione, $file_originale, FTP_ASCII);
+            //fine caricamento copertina
             $dbh = new PDO('mysql:host=127.0.0.1;dbname=libreria', 'root', '');
-            echo $autore_libro;
             try {
-                foreach($dbh->query('INSERT INTO `libro`( `id_autore`, `titolo`, `prezzo`, `id_genere`, `anno`, `note`, `id_negozio`, `copertina`) VALUES ('.$autore_libro.',"'.$titolo_libro.'",'.$prezzo_libro.','.$genere_libro.','.$anno_libro.',"'.$note.'",'.$negozio.','.$copertina_libro.')') as $row) {
+                foreach($dbh->query('INSERT INTO `libro`( `id_autore`, `titolo`, `prezzo`, `id_genere`, `anno`, `note`, `id_negozio`, `copertina`) VALUES ('.$autore_libro.',"'.$titolo_libro.'",'.$prezzo_libro.','.$genere_libro.','.$anno_libro.',"'.$note.'",'.$negozio.',"'.$copertina_libro.'")') as $row) {
                     echo "Abbiamo inserito: ".$titolo_libro." di ".$autore_libro;
                 }
                 $dbh = null;
@@ -70,20 +83,13 @@
         {
             ?>
             <!--Form Inserimento nuovo libro-->
-            <form method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>" name="form">
+            <form method="post" action="new_book.php" name="form">
                 <table>
                     <tr>
                         <td>Autore:</td>
                         <td><select name="autore">
                                 <option value="1">Alessandro Baricco</option>
                             </select></td>
-                        <td>
-                            <a href="#" onclick="return mostra()"><i class="fa fa-plus" aria-hidden="true"></i></a><br>
-                            <form id="autore">
-                                Nome:<input type="text"><br>
-                                Cognome:<input type="text">
-                            </form>
-                        </td>
                     </tr>
                     <tr>
                         <td>Titolo:</td>
