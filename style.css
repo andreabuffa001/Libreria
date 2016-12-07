@@ -1,26 +1,38 @@
+body{
+    background-color: darkgray;
+}
 #menu{
     border: 1px solid black;
+    background-color: #C3B091;
+
 }
 #elenco{
     border: 1px solid black;
     float: right;
-    width: 478px;
+    width: 640px;
+    margin-right: 6px;
 }
 #sidebar{
     border: 1px solid black;
     float: right;
-    margin-left: 50px;
+    width: 300px;
 }
 #conteiner{
-    width: 750px;
+    width: 950px;
     margin: auto;
+    height: 1500px;
 }
 .show-book{
     border: 1px solid black;
     margin-bottom: 20px;
     margin-left: 10px;
     float: left;
-    width: 200px;
+    width: 308px;
+    margin-top: 15px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    background-color: #C3B091;
 }
 #note{
      height: 100px;
@@ -28,4 +40,46 @@
 ul li {
     display: inline-block;
     border: 1px solid black;
+    width: 130px;
+    text-align: center;
+    background-color: #C3B091;
+}
+ul li:hover{
+    background-color: wheat;
+    -webkit-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
+}
+h2{
+    width: 250px;
+    float: left;
+}
+h3{
+    width: 250px;
+    float: right;
+    text-align: right;
+}
+#img-sidebar{
+    margin-left: 55px;
+}
+#titoli{
+    width: 950px;
+    height: 80px;
+}
+#p-libro{
+    text-align: center;
+}
+#img-elenco{
+    margin-left: 55px;
+}
+.book-sidebar{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    float: left;
+    border: 1px solid black;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    width: 280px;
+    background-color: #C3B091;
 }
