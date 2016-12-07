@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="30c3e1fb-b5b4-4b7e-a6d8-4d1552d6c746" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/all_book.php" afterPath="$PROJECT_DIR$/all_book.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new_book.php" afterPath="$PROJECT_DIR$/new_book.php" />
     </list>
     <ignored path="Libreria Personale.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,7 +58,7 @@
       <file leaf-file-name="all_book.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/all_book.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="544">
               <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
               <folding>
                 <marker date="1481118957619" expanded="true" signature="788:981" ph="SELECT DISTI... libro" />
@@ -259,7 +257,7 @@
       <workItem from="1480763317213" duration="2839000" />
       <workItem from="1480937866454" duration="6893000" />
       <workItem from="1481031202460" duration="9215000" />
-      <workItem from="1481111321431" duration="4666000" />
+      <workItem from="1481111321431" duration="4738000" />
     </task>
     <task id="LOCAL-00001" summary="Correzione Query Select">
       <created>1480517622781</created>
@@ -366,11 +364,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481118739617</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Sistemazione pagine all_book, new_book">
+      <created>1481119008205</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1481119008205</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49746000" />
+    <option name="totallyTimeSpent" value="49818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -426,7 +431,8 @@
     <MESSAGE value="Sistemazione div elenco" />
     <MESSAGE value="Sistemazione query sidebar" />
     <MESSAGE value="Sistemazione nuove regole di stile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sistemazione nuove regole di stile" />
+    <MESSAGE value="Sistemazione pagine all_book, new_book" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sistemazione pagine all_book, new_book" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -765,7 +771,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/all_book.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="544">
           <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
           <folding>
             <marker date="1481118957619" expanded="true" signature="788:981" ph="SELECT DISTI... libro" />
