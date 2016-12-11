@@ -54,22 +54,23 @@
             $prezzo_libro= $_POST['prezzo'];
             $anno_libro= $_POST['anno'];
             $note= $_POST['note'];
-            $copertina_libro= $_POST['copertina'];
+            $copertina_libro= $_POST['copertina'];//file name
             //fine varibili
             //caricamento FTP della copertina
             $server= "127.0.0.1";
             $username= 'daemon';
             $password= 'xampp';
-            $login= ftp_login($id_connessione, $username, $passoword);
             $id_connessione= ftp_connect($server);
+            $login= ftp_login($id_connessione, $username, $password);
             $file_originale= $copertina_libro;
             $file_destinazione= $copertina_libro;
-            ftp_chdir($id_connessione, 'uploads/');
+            ftp_chdir($id_connessione, '/Libreria/uploads');
             ftp_put($id_connessione, $file_destinazione, $file_originale, FTP_ASCII);
             //fine caricamento copertina
             $dbh = new PDO('mysql:host=127.0.0.1;dbname=libreria', 'root', '');
+            echo "Current directory: " . ftp_pwd($id_connessione) . "\n";
             try {
-                foreach($dbh->query('INSERT INTO `libro`( `id_autore`, `titolo`, `prezzo`, `id_genere`, `anno`, `note`, `id_negozio`, `copertina`) VALUES ('.$autore_libro.',"'.$titolo_libro.'",'.$prezzo_libro.','.$genere_libro.','.$anno_libro.',"'.$note.'",'.$negozio.',"'.$copertina_libro.'")') as $row) {
+                foreach($dbh->query('INSERT INTO `libro`( `id_autore`, `titolo`, `prezzo`, `id_genere`, `anno`, `note`, `id_negozio`, `copertina`) VALUES ('.$autore_libro.',"'.$titolo_libro.'","'.$prezzo_libro.'",'.$genere_libro.','.$anno_libro.',"'.$note.'",'.$negozio.',"'.$copertina_libro.'")') as $row) {
                     echo "Abbiamo inserito: ".$titolo_libro." di ".$autore_libro;
                 }
                 $dbh = null;
@@ -82,6 +83,7 @@
         {
             ?>
             <!--Form Inserimento nuovo libro-->
+
             <form method="post" action="new_book.php" name="form">
                 <table>
                     <tr>
@@ -131,7 +133,7 @@
                         <td><input type="text" name="note" id="note"></td>
                     </tr>
                     <tr>
-                        <td><input type="file" name="copertina"> </td>
+                        <td><input type="file" name="copertina" /> </td>
                         <td><input type="submit" value="carica" name="carica" id="carica"></td>
                     </tr>
                 </table>
