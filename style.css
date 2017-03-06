@@ -84,3 +84,6 @@ h3{
     width: 280px;
     background-color: #C3B091;
 }
+a {
+    display: block;
+}

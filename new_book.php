@@ -35,7 +35,7 @@
         <?php
         $dbh = new PDO('mysql:host=127.0.0.1;dbname=libreria', 'root', '');
         foreach($dbh->query('SELECT DISTINCT autore.nome, autore.cognome, libro.titolo, libro.copertina FROM `libro`,`autore` INNER JOIN libro as libro2 ON autore.idautore = `id_autore` ORDER BY libro.id_libro DESC LIMIT 4') as $row) {
-            echo '<div class="book-sidebar"><p id="p-libro">'.$row['titolo'].' - '.$row['nome'].' '.$row['cognome'].'</p><br><img id="img-sidebar" src="http://127.0.0.1/uploads/'.($row['copertina']).'" width="100" height="150"> </div>';
+            echo '<div class="book-sidebar"><p id="p-libro">'.$row['titolo'].' - '.$row['nome'].' '.$row['cognome'].'</p><br><img id="img-sidebar" src="http://localhost/libreria/uploads/'.($row['copertina']).'" width="100" height="150"> </div>';
         }
         ?>
     </div>
@@ -54,27 +54,40 @@
             $prezzo_libro= $_POST['prezzo'];
             $anno_libro= $_POST['anno'];
             $note= $_POST['note'];
-            $copertina_libro= $_POST['copertina'];//file name
+            //prova ftp
+            //nome temponareo
+            $userfile_tmp = $_FILES['copertina']['tmp_name'];
+            //nome originale
+            $userfile_name = $_FILES['copertina']['name'];
+            $uploaddir = 'C:/xampp/htdocs/Libreria/uploads/';
+            // $copertina_libro= $_POST['copertina'];//file name
             //fine varibili
+            if (move_uploaded_file($userfile_tmp, $uploaddir . $userfile_name)) {
+                //Se l'operazione è andata a buon fine...
+                echo "Abbiamo inserito: ".$titolo_libro." di ".$autore_libro;
+            }else{
+                //Se l'operazione è fallta...
+                echo 'Upload NON valido!';
+            }
+
             //caricamento FTP della copertina
-            $server= "127.0.0.1";
-            $username= 'daemon';
-            $password= 'xampp';
-            $id_connessione= ftp_connect($server);
-            $login= ftp_login($id_connessione, $username, $password);
-            $file_originale= $copertina_libro;
-            $file_destinazione= $copertina_libro;
-            ftp_chdir($id_connessione, '/Libreria/uploads');
-            ftp_put($id_connessione, $file_destinazione, $file_originale, FTP_ASCII);
+            // $server= "127.0.0.1";
+            // $username= 'daemon';
+            // $password= 'xampp';
+            // $id_connessione= ftp_connect($server);
+            // $login= ftp_login($id_connessione, $username, $password);
+            // $file_originale= $copertina_libro;
+            // $file_destinazione= $copertina_libro;
+            // ftp_chdir($id_connessione, '/Libreria/uploads/');
+            // ftp_put($id_connessione, $file_destinazione, $file_originale, FTP_ASCII);
             //fine caricamento copertina
-            $dbh = new PDO('mysql:host=127.0.0.1;dbname=libreria', 'root', '');
-            echo "Current directory: " . ftp_pwd($id_connessione) . "\n";
+            // $dbh = new PDO('mysql:host=127.0.0.1;dbname=libreria', 'root', '');
+            // echo "Current directory: " . ftp_pwd($id_connessione) . "\n";
             try {
-                foreach($dbh->query('INSERT INTO `libro`( `id_autore`, `titolo`, `prezzo`, `id_genere`, `anno`, `note`, `id_negozio`, `copertina`) VALUES ('.$autore_libro.',"'.$titolo_libro.'","'.$prezzo_libro.'",'.$genere_libro.','.$anno_libro.',"'.$note.'",'.$negozio.',"'.$copertina_libro.'")') as $row) {
-                    echo "Abbiamo inserito: ".$titolo_libro." di ".$autore_libro;
+                foreach($dbh->query('INSERT INTO `libro`( `id_autore`, `titolo`, `prezzo`, `id_genere`, `anno`, `note`, `id_negozio`, `copertina`) VALUES ('.$autore_libro.',"'.$titolo_libro.'","'.$prezzo_libro.'",'.$genere_libro.','.$anno_libro.',"'.$note.'",'.$negozio.',"'.$userfile_name.'")') as $row) {
                 }
-                $dbh = null;
-            } catch (PDOException $e) {
+                    $dbh = null;
+             } catch (PDOException $e) {
                 print "Error!: " . $e->getMessage() . "<br/>";
                 die();
             }
@@ -84,7 +97,7 @@
             ?>
             <!--Form Inserimento nuovo libro-->
 
-            <form method="post" action="new_book.php" name="form">
+            <form method="post" action="new_book.php" name="form" enctype="multipart/form-data">
                 <table>
                     <tr>
                         <td>Autore:</td>
