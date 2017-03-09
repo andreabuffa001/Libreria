@@ -18,5 +18,7 @@
     </orderEntry>
     <orderEntry type="library" name="fb7210964a" level="application" />
     <orderEntry type="library" name="jquery-3.1.1" level="application" />
+    <orderEntry type="library" name="jquery-1.12.4" level="application" />
+    <orderEntry type="library" name="jquery-ui" level="application" />
   </component>
 </module>

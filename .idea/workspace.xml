@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30c3e1fb-b5b4-4b7e-a6d8-4d1552d6c746" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Libreria Personale.iml" afterPath="$PROJECT_DIR$/.idea/Libreria Personale.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new_book.php" afterPath="$PROJECT_DIR$/new_book.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="Libreria Personale.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,12 +34,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/325213af-f869-44ee-8ded-1a67c1ab4ca8/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="193" lean-forward="false" selection-start-line="0" selection-start-column="193" selection-end-line="0" selection-end-column="193" />
+            <state relative-caret-position="51">
+              <caret line="3" column="63" lean-forward="false" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_book.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/new_book.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="237" column="71" lean-forward="false" selection-start-line="237" selection-start-column="71" selection-end-line="237" selection-end-column="71" />
+              <folding>
+                <marker date="1489053005320" expanded="true" signature="6955:7148" ph="SELECT DISTI... libro" />
+                <marker date="1489053005320" expanded="true" signature="8780:9036" ph="INSERT INTO `libro`... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,8 +86,8 @@
         <option value="$PROJECT_DIR$/query_app" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/new_book.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/325213af-f869-44ee-8ded-1a67c1ab4ca8/console.sql" />
+        <option value="$PROJECT_DIR$/new_book.php" />
       </list>
     </option>
   </component>
@@ -127,24 +137,10 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libreria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libreria" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uploads" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,7 +246,8 @@
       <workItem from="1481471488753" duration="2422000" />
       <workItem from="1481474522264" duration="2825000" />
       <workItem from="1488361570893" duration="5492000" />
-      <workItem from="1488790863202" duration="4501000" />
+      <workItem from="1488790863202" duration="6391000" />
+      <workItem from="1489052010460" duration="979000" />
     </task>
     <task id="LOCAL-00001" summary="Correzione Query Select">
       <created>1480517622781</created>
@@ -364,17 +361,23 @@
       <option name="project" value="LOCAL" />
       <updated>1481119008205</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Risolto problema della funzioa FTP_put utilizzando move_file_upload">
+      <created>1488795816918</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1488795816918</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65058000" />
+    <option name="totallyTimeSpent" value="67927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21961933" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -391,6 +394,7 @@
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -429,7 +433,9 @@
     <MESSAGE value="Sistemazione query sidebar" />
     <MESSAGE value="Sistemazione nuove regole di stile" />
     <MESSAGE value="Sistemazione pagine all_book, new_book" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sistemazione pagine all_book, new_book" />
+    <MESSAGE value="Risolto problema della funzioa FTP_put utilizzando move_file_upload" />
+    <MESSAGE value="Popolamento db e inserimento valori su select" />
+    <option name="LAST_COMMIT_MESSAGE" value="Popolamento db e inserimento valori su select" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -459,7 +465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="50" column="51" lean-forward="false" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -486,8 +491,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488795280336" expanded="true" signature="1293:1486" ph="SELECT DISTI... libro" />
-            <marker date="1488795280336" expanded="true" signature="3858:4114" ph="INSERT INTO `libro`... " />
+            <marker date="1489053005320" expanded="true" signature="6955:7148" ph="SELECT DISTI... libro" />
+            <marker date="1489053005320" expanded="true" signature="8780:9036" ph="INSERT INTO `libro`... " />
           </folding>
         </state>
       </provider>
@@ -507,7 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="50" column="51" lean-forward="false" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -534,8 +538,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488795280336" expanded="true" signature="1293:1486" ph="SELECT DISTI... libro" />
-            <marker date="1488795280336" expanded="true" signature="3858:4114" ph="INSERT INTO `libro`... " />
+            <marker date="1489053005320" expanded="true" signature="6955:7148" ph="SELECT DISTI... libro" />
+            <marker date="1489053005320" expanded="true" signature="8780:9036" ph="INSERT INTO `libro`... " />
           </folding>
         </state>
       </provider>
@@ -555,7 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="50" column="51" lean-forward="false" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -582,8 +585,8 @@
         <state relative-caret-position="720">
           <caret line="40" column="10" lean-forward="false" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
           <folding>
-            <marker date="1488795280336" expanded="true" signature="1293:1486" ph="SELECT DISTI... libro" />
-            <marker date="1488795280336" expanded="true" signature="3858:4114" ph="INSERT INTO `libro`... " />
+            <marker date="1489053005320" expanded="true" signature="6955:7148" ph="SELECT DISTI... libro" />
+            <marker date="1489053005320" expanded="true" signature="8780:9036" ph="INSERT INTO `libro`... " />
           </folding>
         </state>
       </provider>
@@ -622,8 +625,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488795280336" expanded="true" signature="1293:1486" ph="SELECT DISTI... libro" />
-            <marker date="1488795280336" expanded="true" signature="3858:4114" ph="INSERT INTO `libro`... " />
+            <marker date="1489053005320" expanded="true" signature="6955:7148" ph="SELECT DISTI... libro" />
+            <marker date="1489053005320" expanded="true" signature="8780:9036" ph="INSERT INTO `libro`... " />
           </folding>
         </state>
       </provider>
@@ -639,7 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -676,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,8 +686,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488795280336" expanded="true" signature="1293:1486" ph="SELECT DISTI... libro" />
-            <marker date="1488795280336" expanded="true" signature="3858:4114" ph="INSERT INTO `libro`... " />
+            <marker date="1489053005320" expanded="true" signature="6955:7148" ph="SELECT DISTI... libro" />
+            <marker date="1489053005320" expanded="true" signature="8780:9036" ph="INSERT INTO `libro`... " />
           </folding>
         </state>
       </provider>
@@ -721,8 +722,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488795280336" expanded="true" signature="1293:1486" ph="SELECT DISTI... libro" />
-            <marker date="1488795280336" expanded="true" signature="3858:4114" ph="INSERT INTO `libro`... " />
+            <marker date="1489053005320" expanded="true" signature="6955:7148" ph="SELECT DISTI... libro" />
+            <marker date="1489053005320" expanded="true" signature="8780:9036" ph="INSERT INTO `libro`... " />
           </folding>
         </state>
       </provider>
@@ -871,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1221">
           <caret line="87" column="19" lean-forward="false" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,22 +886,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new_book.php">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/325213af-f869-44ee-8ded-1a67c1ab4ca8/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="67" column="18" lean-forward="true" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
-          <folding>
-            <marker date="1488795280336" expanded="true" signature="1293:1486" ph="SELECT DISTI... libro" />
-            <marker date="1488795280336" expanded="true" signature="3858:4114" ph="INSERT INTO `libro`... " />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="63" lean-forward="false" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/325213af-f869-44ee-8ded-1a67c1ab4ca8/console.sql">
+    <entry file="file://$PROJECT_DIR$/new_book.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="193" lean-forward="false" selection-start-line="0" selection-start-column="193" selection-end-line="0" selection-end-column="193" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="237" column="71" lean-forward="false" selection-start-line="237" selection-start-column="71" selection-end-line="237" selection-end-column="71" />
+          <folding>
+            <marker date="1489053005320" expanded="true" signature="6955:7148" ph="SELECT DISTI... libro" />
+            <marker date="1489053005320" expanded="true" signature="8780:9036" ph="INSERT INTO `libro`... " />
+          </folding>
         </state>
       </provider>
     </entry>

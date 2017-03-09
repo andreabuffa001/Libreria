@@ -13,6 +13,146 @@
           $("#autore").show();
         }
     </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $.widget( "custom.combobox", {
+                _create: function() {
+                    this.wrapper = $( "<span>" )
+                        .addClass( "custom-combobox" )
+                        .insertAfter( this.element );
+
+                    this.element.hide();
+                    this._createAutocomplete();
+                    this._createShowAllButton();
+                },
+
+                _createAutocomplete: function() {
+                    var selected = this.element.children( ":selected" ),
+                        value = selected.val() ? selected.text() : "";
+
+                    this.input = $( "<input>" )
+                        .appendTo( this.wrapper )
+                        .val( value )
+                        .attr( "title", "" )
+                        .addClass( "custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left" )
+                        .autocomplete({
+                            delay: 0,
+                            minLength: 0,
+                            source: $.proxy( this, "_source" )
+                        })
+                        .tooltip({
+                            classes: {
+                                "ui-tooltip": "ui-state-highlight"
+                            }
+                        });
+
+                    this._on( this.input, {
+                        autocompleteselect: function( event, ui ) {
+                            ui.item.option.selected = true;
+                            this._trigger( "select", event, {
+                                item: ui.item.option
+                            });
+                        },
+
+                        autocompletechange: "_removeIfInvalid"
+                    });
+                },
+
+                _createShowAllButton: function() {
+                    var input = this.input,
+                        wasOpen = false;
+
+                    $( "<a>" )
+                        .attr( "tabIndex", -1 )
+                        .attr( "title", "Show All Items" )
+                        .tooltip()
+                        .appendTo( this.wrapper )
+                        .button({
+                            icons: {
+                                primary: "ui-icon-triangle-1-s"
+                            },
+                            text: false
+                        })
+                        .removeClass( "ui-corner-all" )
+                        .addClass( "custom-combobox-toggle ui-corner-right" )
+                        .on( "mousedown", function() {
+                            wasOpen = input.autocomplete( "widget" ).is( ":visible" );
+                        })
+                        .on( "click", function() {
+                            input.trigger( "focus" );
+
+                            // Close if already visible
+                            if ( wasOpen ) {
+                                return;
+                            }
+
+                            // Pass empty string as value to search for, displaying all results
+                            input.autocomplete( "search", "" );
+                        });
+                },
+
+                _source: function( request, response ) {
+                    var matcher = new RegExp( $.ui.autocomplete.escapeRegex(request.term), "i" );
+                    response( this.element.children( "option" ).map(function() {
+                        var text = $( this ).text();
+                        if ( this.value && ( !request.term || matcher.test(text) ) )
+                            return {
+                                label: text,
+                                value: text,
+                                option: this
+                            };
+                    }) );
+                },
+
+                _removeIfInvalid: function( event, ui ) {
+
+                    // Selected an item, nothing to do
+                    if ( ui.item ) {
+                        return;
+                    }
+
+                    // Search for a match (case-insensitive)
+                    var value = this.input.val(),
+                        valueLowerCase = value.toLowerCase(),
+                        valid = false;
+                    this.element.children( "option" ).each(function() {
+                        if ( $( this ).text().toLowerCase() === valueLowerCase ) {
+                            this.selected = valid = true;
+                            return false;
+                        }
+                    });
+
+                    // Found a match, nothing to do
+                    if ( valid ) {
+                        return;
+                    }
+
+                    // Remove invalid value
+                    this.input
+                        .val( "" )
+                        .attr( "title", value + " didn't match any item" )
+                        .tooltip( "open" );
+                    this.element.val( "" );
+                    this._delay(function() {
+                        this.input.tooltip( "close" ).attr( "title", "" );
+                    }, 2500 );
+                    this.input.autocomplete( "instance" ).term = "";
+                },
+
+                _destroy: function() {
+                    this.wrapper.remove();
+                    this.element.show();
+                }
+            });
+
+            $( "#combobox" ).combobox();
+            $( "#toggle" ).on( "click", function() {
+                $( "#combobox" ).toggle();
+            });
+        } );
+    </script>
 </head>
 <body>
 <div id="conteiner">
@@ -69,20 +209,6 @@
                 //Se l'operazione è fallta...
                 echo 'Upload NON valido!';
             }
-
-            //caricamento FTP della copertina
-            // $server= "127.0.0.1";
-            // $username= 'daemon';
-            // $password= 'xampp';
-            // $id_connessione= ftp_connect($server);
-            // $login= ftp_login($id_connessione, $username, $password);
-            // $file_originale= $copertina_libro;
-            // $file_destinazione= $copertina_libro;
-            // ftp_chdir($id_connessione, '/Libreria/uploads/');
-            // ftp_put($id_connessione, $file_destinazione, $file_originale, FTP_ASCII);
-            //fine caricamento copertina
-            // $dbh = new PDO('mysql:host=127.0.0.1;dbname=libreria', 'root', '');
-            // echo "Current directory: " . ftp_pwd($id_connessione) . "\n";
             try {
                 foreach($dbh->query('INSERT INTO `libro`( `id_autore`, `titolo`, `prezzo`, `id_genere`, `anno`, `note`, `id_negozio`, `copertina`) VALUES ('.$autore_libro.',"'.$titolo_libro.'","'.$prezzo_libro.'",'.$genere_libro.','.$anno_libro.',"'.$note.'",'.$negozio.',"'.$userfile_name.'")') as $row) {
                 }
@@ -101,8 +227,15 @@
                 <table>
                     <tr>
                         <td>Autore:</td>
-                        <td><select name="autore">
+                        <td><select name="autore" id="combobox">
+                                <option value="0">Scrivi l'autore</option>
                                 <option value="1">Alessandro Baricco</option>
+                                <option value="2">Francesco Carofiglio</option>
+                                <option value="3">Arthur Conan Doyle</option>
+                                <option value="4">Alessandro Manzoni</option>
+                                <option value="5">Carlo Collodi</option>
+                                <option value="6">Emily Bronte</option>
+                                <option value="7">Herman Hesse</option>
                             </select></td>
                     </tr>
                     <tr>
@@ -111,7 +244,7 @@
                     </tr>
                     <tr>
                         <td>Genere</td>
-                        <td><select name="genere">
+                        <td><select name="genere" id="combobox">
                                 <option value="0">Scegli Genere</option>
                                 <optgroup label="Forma 1">
                                     <option value="1">Romanzo</option>

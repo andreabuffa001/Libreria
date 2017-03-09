@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{fb7210964a, jquery-3.1.1}" />
+    <file url="PROJECT" libraries="{fb7210964a, jquery-1.12.4, jquery-3.1.1, jquery-ui}" />
   </component>
 </project>
